@@ -1,0 +1,164 @@
+@import "./base/bootstrap.scss";
+@import "./base/bootstrap-extended.scss";
+@import "./base/colors.scss";
+@import "./base/components.scss";
+
+// Themes
+@import "./base/themes/dark-layout.scss";
+@import "./base/themes/bordered-layout.scss";
+@import "./base/themes/semi-dark-layout.scss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "./variables/font-sizes.scss";
+@import "./variables/colors.scss";
+// @import './base/custom-rtl.scss';
+
+// React Specific
+@import "react/index";
+
+.CUstomeImageLogoUploader {
+  border-radius: 100%;
+  width: 77px !important;
+  height: 77px !important;
+  object-fit: cover;
+}
+// font size
+.fs-10 {
+  font-size: 10px !important;
+}
+.fs-11 {
+  font-size: 11px !important;
+}
+.fs-12 {
+  font-size: 12px !important;
+}
+.fs-13 {
+  font-size: 13px !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-15 {
+  font-size: 15px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-17 {
+  font-size: 17px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.fs-19 {
+  font-size: 19px !important;
+}
+.fs-20 {
+  font-size: 20px !important;
+}
+.fs-21 {
+  font-size: 21px !important;
+}
+.fs-22 {
+  font-size: 22px !important;
+}
+.fs-23 {
+  font-size: 23px !important;
+}
+.fs-24 {
+  font-size: 24px !important;
+}
+.fs-25 {
+  font-size: 25px !important;
+}
+.fs-26 {
+  font-size: 26px !important;
+}
+.fs-27 {
+  font-size: 27px !important;
+}
+.fs-28 {
+  font-size: 28px !important;
+}
+.fs-29 {
+  font-size: 29px !important;
+}
+.fs-30 {
+  font-size: 30px !important;
+}
+.fs-35 {
+  font-size: 35px !important;
+}
+.fs-36 {
+  font-size: 36px !important;
+}
+.fs-40 {
+  font-size: 40px !important;
+}
+
+.h-150 {
+  height: 150px;
+}
+
+.ms-0\/5 {
+  margin-left: 0.5rem !important;
+}
+
+.my-0\/5 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-0\/5 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mt-0\/5 {
+  margin-top: 0.5rem !important;
+}
+
+.borderColor-green {
+  border: 2px solid #1a928d !important;
+}
+
+.color-darkGreen {
+  color: #1a928d !important;
+}
+
+.bg-lightGreen {
+  background-color: #edf6f6 !important;
+}
+
+.borderColor-Lgreen {
+  border: 2px solid #edf6f6 !important;
+}
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-7 {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.py-0\/5 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.p-0\/5 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.bottom-1 {
+  bottom: 1rem !important;
+}

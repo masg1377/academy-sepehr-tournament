@@ -1,0 +1,112 @@
+.breadcrumb {
+  &:not([class*="breadcrumb-"]) {
+    .breadcrumb-item + .breadcrumb-item {
+      &:before {
+        content: " ";
+        background-image: url(str-replace(
+          str-replace($chevron-right, "currentColor", $body-color),
+          "#",
+          "%23"
+        ));
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $body-color;
+        margin-right: $breadcrumb-item-padding-x;
+        background-size: 14px;
+      }
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item {
+    &:before {
+      height: 20px;
+    }
+  }
+}
+
+/* Component Specific */
+.breadcrumb-slash {
+  &.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item:before {
+      content: "/";
+    }
+  }
+}
+.breadcrumb-dots {
+  &.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item:before {
+      content: ".";
+      position: relative;
+      top: -4px;
+    }
+  }
+}
+.breadcrumb-dashes {
+  &.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item:before {
+      content: "-";
+    }
+  }
+}
+.breadcrumb-pipes {
+  &.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item:before {
+      content: "|";
+    }
+  }
+}
+.breadcrumb-chevron {
+  &.breadcrumb {
+    .breadcrumb-item + .breadcrumb-item:before {
+      content: " ";
+      background-image: url(str-replace(
+        str-replace($chevron-right, "currentColor", $body-color),
+        "#",
+        "%23"
+      ));
+      background-repeat: no-repeat;
+      background-position: center;
+      color: $body-color;
+      margin-right: $breadcrumb-item-padding-x;
+      background-size: 14px;
+    }
+  }
+}
+// padding left for header area breadcrumbs
+.content-header .breadcrumb {
+  padding-left: 1rem;
+}
+
+.content-header.no-padding {
+  margin: 0 -2rem 0 -2rem;
+}
+.content-header.breadcrumb-wrapper {
+  background-color: #19257c;
+  height: 146px;
+  z-index: -1;
+  margin-bottom: -60px;
+
+  .content-header-left {
+    margin: 37px 0 0 1rem !important;
+    width: 40% !important;
+  }
+
+  .content-header-right {
+    margin: 37px 1rem 0 0rem !important;
+  }
+}
+
+.content-header.breadcrumb-wrapper-mini {
+  height: 96px;
+  margin-bottom: -5px;
+}
+
+@media (max-width: 648px) {
+  .content-header .breadcrumb {
+    // display: none;
+  }
+  .breadcrumbs-top {
+    .content-header-title {
+      display: contents !important;
+    }
+  }
+}

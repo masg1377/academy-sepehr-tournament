@@ -1,0 +1,120 @@
+/* Fonts */
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("./Montserrat-SemiBold.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url("./Montserrat-Bold.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: MontserratLight;
+  src: url("./Montserrat-Light.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSansSemibold;
+  src: url("./OpenSans-SemiBold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url("./OpenSans-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("./Montserrat-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url("./Montserrat-Medium.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("./Poppins-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url("./Poppins-SemiBold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("./Poppins-Medium.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url("./Poppins-Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url("./Roboto-Medium.ttf");
+  font-style: normal;
+}
+
+/* Classes */
+/* montserrat */
+.font-montserrat-semiBold {
+  font-family: MontserratSemiBold !important;
+}
+
+.font-montserrat-regular {
+  font-family: MontserratRegular !important;
+}
+
+.font-montserrat-medium {
+  font-family: MontserratMedium !important;
+}
+
+.font-montserrat-bold {
+  font-family: MontserratBold !important;
+}
+
+.font-montserrat-light {
+  font-family: MontserratLight !important;
+}
+
+/* opensans */
+.font-opensans-semibold {
+  font-family: OpenSansSemibold !important;
+}
+.font-opensans-regular {
+  font-family: OpenSansRegular !important;
+}
+
+/* poppin */
+.font-poppin-regular {
+  font-family: PoppinsRegular !important;
+}
+
+.font-poppin-semibold {
+  font-family: PoppinsSemibold !important;
+}
+
+.font-poppin-medium {
+  font-family: PoppinsMedium !important;
+}
+.font-poppin-bold {
+  font-family: PoppinsBold !important;
+}
+
+/* Roboto */
+.font-roboto-medium {
+  font-family: RobotoMedium !important;
+}

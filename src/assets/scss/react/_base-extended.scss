@@ -1,0 +1,638 @@
+// Layout
+// ========================================================================
+body,
+#root,
+.wrapper {
+  height: 100%;
+}
+
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.notif-no-bg {
+  .bs-stepper-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}
+
+.text-blue-notif {
+  color: #094fd0;
+}
+
+.bg-grey {
+  background-color: #f5f5f5;
+}
+
+.mb-5px {
+  margin-bottom: 5px !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.code-wrapper-style {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.is-valid {
+  z-index: unset !important;
+}
+.input-group .form-control.is-invalid {
+  z-index: unset !important;
+}
+
+.flex-1 {
+  flex: 1 !important;
+}
+
+.w-47 {
+  width: 47% !important;
+}
+
+.code-input-style {
+  border-radius: 13px !important;
+  border: solid 1px #bdc0c9;
+  width: 59px;
+  height: 71px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 10px;
+
+  &:focus {
+    border: solid 1px #314bc9;
+  }
+}
+.code-input-style-error {
+  border: solid 1px #e10c0c;
+}
+@media (max-width: 1445px) {
+  .code-input-style {
+    width: 49px;
+    height: 61px;
+    font-size: 22px;
+    margin: 0 8px;
+    &:focus {
+      border: solid 1px #314bc9;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .code-input-style {
+    width: 39px;
+    height: 51px;
+    font-size: 20px;
+
+    &:focus {
+      border: solid 1px #314bc9;
+    }
+  }
+}
+
+// for disabling content
+.disbaled-content {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.mb-1-1 {
+  margin-bottom: 6px !important;
+}
+.mt-1-1 {
+  margin-top: 6px !important;
+}
+
+.ms-1-1 {
+  margin-left: 3px !important;
+}
+
+.no-padding-ul > ul > li > ul {
+  padding-left: 0 !important;
+}
+.no-padding-ul > ul {
+  padding: 0 !important;
+}
+
+.slick-list {
+  z-index: 1;
+}
+.slick-dots li button {
+  pointer-events: none;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+.text-darker {
+  color: #2e2e33;
+}
+
+.bg-input-empty {
+  background-color: #f4f3f9 !important;
+}
+
+.bg-light-purple {
+  background-color: #eef0ff;
+}
+
+.text-gray2 {
+  color: #92969a;
+}
+
+.bg-light-blue {
+  background-color: #f4f5fb;
+}
+
+.text-blue-darker {
+  color: #3342af;
+}
+
+.text-purple {
+  color: #564ec1;
+}
+
+.text-purple-lighter {
+  color: #5d66a6;
+}
+
+.border-gray2 {
+  border-color: #92969a;
+}
+.fs-5 {
+  font-size: 15.5px !important;
+}
+.fs-6-1 {
+  font-size: 14px !important;
+}
+
+.fs-7 {
+  font-size: 13px !important;
+}
+.fs-8 {
+  font-size: 12px !important;
+}
+.fs-9 {
+  font-size: 11px !important;
+}
+.fs-10 {
+  font-size: 10px !important;
+}
+.pending {
+  color: #e5bf00 !important;
+}
+
+.bg-pending {
+  background-color: #e8c92f !important;
+}
+
+.no-back-bg {
+  background-image: none !important;
+}
+
+.slick-slide {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  height: 0;
+  overflow: hidden;
+}
+.slick-active {
+  pointer-events: auto;
+  height: 100% !important;
+  overflow: visible !important;
+}
+.bg-blue {
+  background-color: #006bff !important;
+  border-color: #006bff !important;
+}
+
+.bg-img-empty {
+  background-image: none !important;
+}
+
+.border-success-form {
+  border-color: #28c76f !important;
+}
+
+.border-error-form {
+  border-color: #ea5455 !important;
+}
+.text-error-form {
+  color: #ea5455 !important;
+}
+
+// discount react select options
+.margin-left-9 {
+  margin-left: 9px;
+}
+.discount-options-holder {
+  margin: 5px 10px 5px 0;
+  padding: 5px 9px;
+  border-radius: 4px;
+}
+.discount-options-holder2 {
+  margin: 1px 8px 8px 5px;
+  padding: 7px 9px;
+  border-radius: 3px;
+  line-height: 9px;
+}
+.outlineContainerCustome {
+  line-height: 12px;
+  margin-top: 5px;
+}
+
+// staff management
+.fs-99 {
+  font-size: 9px !important;
+}
+.padding-badge-small {
+  padding: 3px !important;
+}
+.ms-badge-small {
+  margin-left: 5px;
+}
+.badge-custome-size {
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  line-height: 10px !important;
+}
+.general-size-ripple-button {
+  width: 144px;
+  height: 40px;
+  font-size: 16px !important;
+}
+
+.searchFilterLabelGeneral {
+  color: #2e2e33 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.customeInfoFontSize {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.staffInfoTitle {
+  color: #92969a;
+}
+.staffInfoText {
+  color: #2e2e33;
+}
+.linkBlue {
+  color: #006bff;
+}
+
+// staff information roles edit and ...
+.hoverClick {
+  background: red;
+}
+.saveBtColor {
+  background-color: #04cad0 !important;
+}
+.roleHolderClick {
+  background-color: #e1e0ea !important;
+}
+.roleHolder:hover {
+  background-color: #e1e0ea !important;
+}
+
+.roles-list {
+  border-radius: 2px;
+  background-color: rgba(244, 243, 249, 0.6);
+  padding: 6px 0px;
+  margin-top: 10px;
+  border: solid 1px #e1e0ea;
+  max-height: 230px;
+  min-height: 160px;
+  overflow-y: auto;
+}
+
+.active-inactive-show {
+  margin-left: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+}
+.active-inactive-show2 {
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  border-radius: 100px;
+  margin-top: 2px;
+}
+
+// gallery show component
+.padding-5-px {
+  padding: 5px !important;
+}
+.padding-1-px {
+  padding: 1px !important;
+}
+.radius-55 {
+  border-radius: 5px !important;
+}
+.radius-22 {
+  border-radius: 2px !important;
+}
+.fit-coverr {
+  object-fit: cover;
+}
+
+.button-list-background {
+  background: #f5f5f5 !important;
+  border-color: #f5f5f5 !important;
+}
+// register
+
+.register-logo-liner-big {
+  padding: 2px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgba(25, 37, 124, 0.32);
+  transform: translateX(3px);
+}
+.register-logo-liner-small {
+  padding: 2px;
+  border-radius: 100%;
+  background-color: rgba(25, 37, 124, 0.32);
+  margin-left: 3px;
+  transform: translateX(3px);
+}
+
+.register-dashboard-name {
+  color: #19257c;
+  font-weight: 600;
+}
+.blue-color-invoice {
+  color: #19257c;
+}
+.black-color-invoice {
+  color: #313136;
+}
+//
+// Vertical Menu
+// ========================================================================
+.vertical-layout .main-menu {
+  &.expanded {
+    .navigation {
+      li:not(.open) {
+        & > ul {
+          display: block !important;
+        }
+      }
+    }
+  }
+  .navigation {
+    li:not(.open) {
+      a {
+        &:after {
+          transform: rotate(0deg) !important;
+        }
+      }
+    }
+    // a.active {
+    //   z-index: 1;
+    //   background: #314bc9; //linear-gradient(118deg, rgba($primary, 1), rgba($primary, 0.7));
+    //   // background: #f7f6f9; //linear-gradient(118deg, rgba($primary, 1), rgba($primary, 0.7));
+    //   // box-shadow: 0 0 10px 1px rgba($primary, 0.7);
+    //   color: #fff;
+    //   font-weight: 400;
+    //   border-radius: 4px;
+    // }
+
+    li.nav-item {
+      .menu-item {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+body #root .wrapper .ps__rail-y {
+  left: auto !important ;
+  right: 1px !important;
+}
+
+// Profile Dropdown (Common)
+// ========================================================================
+.vertical-layout,
+.horizontal-layout {
+  .header-navbar:not(.navbar-horizontal) .navbar-container ul.navbar-nav {
+    li.dropdown {
+      .dropdown-menu {
+        top: 3.5rem !important;
+      }
+      &.dropdown-user {
+        .dropdown-menu {
+          top: 4rem !important;
+        }
+      }
+    }
+  }
+}
+
+// Horizontal Menu
+// ========================================================================
+.horizontal-layout {
+  &.navbar-static .header-navbar.navbar-scrolled {
+    background-color: $white;
+    box-shadow: rgba($black, 0.05) 0px 4px 20px 0px;
+  }
+
+  // Main Navbar
+  .header-navbar {
+    .navbar-container {
+      .dropdown-language,
+      .dropdown-cart,
+      .dropdown-notification,
+      .dropdown-user {
+        .dropdown-menu {
+          top: 3rem !important;
+        }
+      }
+    }
+  }
+
+  // Menu
+  .horizontal-menu-wrapper {
+    #main-menu-navigation {
+      .dropdown {
+        .dropdown-menu.first-level {
+          top: 4.6rem !important;
+        }
+        .dropdown-submenu {
+          &.sidebar-group-active.active {
+            .dropdown-toggle {
+              color: $body-color;
+            }
+          }
+          .dropdown-toggle:after {
+            margin-top: -5px;
+          }
+        }
+
+        .dropdown-item.active {
+          color: $primary !important;
+          background-color: $body-bg !important;
+        }
+      }
+      .nav-item:not(.dropdown):not(.dropdown-submenu) {
+        a.nav-link.active {
+          background: linear-gradient(
+            118deg,
+            rgba($primary, 1),
+            rgba($primary, 0.7)
+          );
+          box-shadow: 0 0 6px 1px rgba($primary, 0.6);
+          color: $white;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .navbar-horizontal {
+      ul.dropdown-menu {
+        .nav-item.active > a {
+          border-bottom: none;
+        }
+
+        // Scrollbar styles
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $gray-500;
+          border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: $gray-300;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+// Layout BreadCrumbs
+// =======================================================================
+.content-header {
+  .content-header-title {
+    font-weight: 500;
+    color: $white;
+    padding-right: $spacer;
+    // border-right: 1px solid lighten($gray-600, 10%);
+  }
+  .content-header-right {
+    .dropdown-toggle:after {
+      display: none;
+    }
+  }
+}
+
+// Bookmarks search
+// ========================================================================
+.header-navbar .navbar-container {
+  .navbar-nav {
+    .autocomplete-container .suggestion-item span {
+      line-height: 1.2;
+    }
+  }
+}
+
+// Component Code
+// ========================================================================
+.card-snippet {
+  pre {
+    margin-top: 0;
+    border-radius: 0.5rem;
+  }
+}
+
+// Dashboard Analytics
+// =======================================================================
+
+.card-congratulations {
+  .avatar svg {
+    height: 28px !important;
+    width: 28px !important;
+  }
+}
+
+// Card Analytics
+// =======================================================================
+.avg-session-progress {
+  height: 6px;
+}
+
+// Block UI
+// ========================================================================
+.block-ui-container {
+  .block-ui-overlay {
+    background: rgba($black, 0.6);
+  }
+}
+
+// React SlideDown
+// ========================================================================
+.react-slidedown {
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+// Router Transitions
+// ========================================================================
+.animate__animated.animate__zoomIn,
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 1s;
+}
+
+// App Ecommerce
+// ========================================================================
+.ecommerce-application {
+  .content-wrapper.animate__animated {
+    animation: none;
+  }
+}
+
+// Customizer
+// ========================================================================
+.customizer {
+  .react-select {
+    width: 100%;
+    max-width: 200px;
+
+    .select__menu {
+      z-index: 2;
+    }
+  }
+}
+
+// Media Query to fix navbar dropdown on sm screen
+@media (max-width: 576px) {
+  .header-navbar .navbar-container .dropdown.show .dropdown-menu {
+    width: auto;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .customeInfoFontSize {
+    font-size: 12px;
+  }
+}

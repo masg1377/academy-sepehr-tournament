@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@src": ["src"],
+      "@assets/*": ["src/assets/*"],
+      "@assets": ["src/assets"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+      "@layouts/*": ["src/components/layouts/*"],
+      "@layouts": ["src/components/layouts"],
+      "@store/*": ["src/redux/*"],
+      "@store": ["src/redux"],
+      "@styles/*": ["src/assets/scss/*"],
+      "@styles": ["src/assets/scss"],
+      "@configs/*": ["src/configs/*"],
+      "@configs": ["src/configs"],
+      "@utils/*": ["src/utility/Utils/*"],
+      "@utils": ["src/utility/Utils"],
+      "@hooks/*": ["src/utility/hooks/*"],
+      "@hooks": ["src/utility/hooks"]
+    }
+  },
+  "include": ["src"]
+}
