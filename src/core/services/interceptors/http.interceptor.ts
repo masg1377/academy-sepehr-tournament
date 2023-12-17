@@ -25,7 +25,7 @@ instance.interceptors.response.use(
     const originalRequest = error.config;
     try {
       // } catch (error) {}
-      const errorStatus = error.response.status;
+      const errorStatus = error.response;
       // console.log(error);
       console.log("----errorr----", error.response, error.response.status);
       // if (!originalRequest?.headers?.Authorization) {

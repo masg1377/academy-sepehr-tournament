@@ -106,24 +106,24 @@ export const columns: any = [
     selector: (row: any) => row.row_id,
   },
   {
-    name: "abbreviated",
+    name: "tournamentName",
     minWidth: "170px",
-    sortable: (row: any) => row.short_name,
-    selector: (row: any) => row.short_name,
+    sortable: (row: any) => row.tournamentName,
+    selector: (row: any) => row.tournamentName,
     cell: (row: any) => (
       <>
-        <CustomTooltip placement="bottom" target={"mlsShortName" + row.id}>
-          {row.short_name}
+        <CustomTooltip placement="bottom" target={"tournamentName" + row.id}>
+          {row.tournamentName}
         </CustomTooltip>
         <span
-          id={"mlsShortName" + row.id}
+          id={"tournamentName" + row.id}
           style={{
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
           }}
         >
-          {row.short_name}
+          {row.tournamentName}
         </span>
       </>
     ),
@@ -278,7 +278,7 @@ export const columns: any = [
 
       return (
         <div className="d-flex">
-          {/* <UncontrolledDropdown>
+          <UncontrolledDropdown>
             <DropdownToggle className="pe-1" tag="span">
               <MoreVertical size={15} />
             </DropdownToggle>
@@ -289,7 +289,7 @@ export const columns: any = [
                 className="w-100"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("/mls-list/" + row.id);
+                  navigate("/tournament-detail/" + row.id);
                 }}
               >
                 <FileText size={15} />
@@ -301,23 +301,14 @@ export const columns: any = [
                 className="w-100"
                 onClick={(e) => {
                   e.preventDefault();
-                  onRemove();
+                  navigate("/tournament-detail/add-avg/" + row.id);
                 }}
               >
-                <Trash size={15} />
-                <span className="align-middle ms-50">Delete</span>
+                <FileText size={15} />
+                <span className="align-middle ms-50">Set Average</span>
               </DropdownItem>
             </DropdownMenu>
-          </UncontrolledDropdown> */}
-          <FileText
-            size={15}
-            className="me-1"
-            onClick={() => navigate("/mls-list/" + row.id)}
-          />
-          <Edit
-            size={15}
-            onClick={() => navigate("/mls-list/edit/" + row.id)}
-          />
+          </UncontrolledDropdown>
         </div>
       );
     },

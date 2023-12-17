@@ -1,8 +1,9 @@
 // ** React Imports
-import { useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 
 // ** Custom Components
 import { Wizard } from "@src/components/common/wizard";
+import { Card, CardBody } from "reactstrap";
 
 // ** Steps
 // import Address from './steps/Address'
@@ -17,8 +18,11 @@ import { AddMlsAccess } from "./AddMlsAccess/AddMlsAccess";
 import { AddMlsConfig } from "./AddMlsConfig/AddMlsConfig";
 import { AddMlsDoc } from "./AddMlsDoc/AddMlsDoc";
 import { useLocation, useParams } from "react-router-dom";
+import { AddCheckList } from "./AddCheckList";
+import { AddReffere } from "./AddReffere";
+import { AddGroupList } from "./AddGroupList";
 
-const AddTournamentWizard = () => {
+const AddTournamentWizard: FC = () => {
   const { id } = useParams();
   const location = useLocation();
   const [activeStep, setActiveStep] = useState(0);
@@ -42,47 +46,51 @@ const AddTournamentWizard = () => {
       content: <AddTournamentData stepper={stepper} type="wizard-modern" />,
     },
     {
-      id: "add-mls-document",
-      title: isEdit ? "Edit MLS document" : "Add MLS document",
+      id: "add-check-list",
+      title: isEdit ? "Edit Check List" : "Add Check List",
       subtitle: "Enter Your MLS Documents.",
       icon: <FileText size={18} />,
-      content: <AddMlsDoc stepper={stepper} type="wizard-modern" />,
+      content: <AddCheckList stepper={stepper} type="wizard-modern" />,
     },
     {
-      id: "add-mls-config",
-      title: isEdit ? "Edit MLS Config" : "Add MLS Config",
-      subtitle: "Enter Your MLS Config.",
+      id: "add-refere-config",
+      title: isEdit ? "Edit Refere" : "Add Refere",
+      subtitle: "Enter Your Refere.",
       icon: <Settings size={18} />,
-      content: <AddMlsConfig stepper={stepper} type="wizard-modern" />,
+      content: <AddReffere stepper={stepper} type="wizard-modern" />,
     },
     {
-      id: "add-mls-access",
-      title: isEdit ? "Edit MLS Access" : "Add MLS Access",
-      subtitle: "Enter Your MLS Access.",
+      id: "add-group-access",
+      title: isEdit ? "Edit Group" : "Add Group",
+      subtitle: "Enter Your Group.",
       icon: <Lock size={18} />,
-      content: <AddMlsAccess stepper={stepper} type="wizard-modern" />,
+      content: <AddGroupList stepper={stepper} type="wizard-modern" />,
     },
   ];
 
   return (
-    <div className="modern-horizontal-wizard">
-      <Wizard
-        type="modern-horizontal"
-        ref={ref}
-        steps={steps}
-        options={{
-          linear: id ? false : true,
-        }}
-        instance={(el: any) => {
-          if (id && !isEdit) {
-            console.log("first", el.detail);
-            el.to(2);
-          }
-          setStepper(el);
-        }}
-        setActiveStep={setActiveStep}
-      />
-    </div>
+    <Card>
+      <CardBody>
+        <div className="modern-horizontal-wizard">
+          <Wizard
+            type="modern-horizontal"
+            ref={ref}
+            steps={steps}
+            options={{
+              linear: false,
+            }}
+            instance={(el: any) => {
+              if (id && !isEdit) {
+                console.log("first", el.detail);
+                el.to(2);
+              }
+              setStepper(el);
+            }}
+            setActiveStep={setActiveStep}
+          />
+        </div>
+      </CardBody>
+    </Card>
   );
 };
 

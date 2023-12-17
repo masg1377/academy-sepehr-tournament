@@ -26,6 +26,9 @@ const TournamentListContainer: FC<IMLSListContainerProp> = ({
   const [totalCount, setTotalCount] = useState<number>(0);
 
   const [data, setData] = useState<any>([]);
+
+  const { user } = useSelector((state: RootState) => state.user);
+  // console.log("user", user.roles);
   // const [hasMore, setHasMore] = useState<boolean>(true);
 
   const getList = useGetTournament();
@@ -74,7 +77,9 @@ const TournamentListContainer: FC<IMLSListContainerProp> = ({
       columns={columns}
       data={data}
       headerTitle="Tournament List"
-      addBtnText="Add Tournament"
+      addBtnText={
+        user?.roles?.includes("TournamentAdmin") ? "Add Tournament" : undefined
+      }
       isLoading={getList.isFetching}
       onAddBtn={() => navigate("/tournament-list/add")}
       loadFunc={() => {}}

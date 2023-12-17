@@ -10,12 +10,13 @@ import { PublicRoute } from "@src/components/common/routes/PublicRoute";
 
 // ** Utils
 import { TRoute } from "@src/core/model/routes.model";
+import { TournamentDetail } from "@src/components/TournamentListContainer/TournamentDetail";
 
 // ** Document title
 const TemplateTitle = "%s - Vuexy React Admin Template";
 
 // ** Default Route
-const DefaultRoute = "/dashboard";
+const DefaultRoute = "/tournament-list";
 
 const AddMls = lazy(() =>
   import("../../screens/MLS/AddMls").then((o) => ({
@@ -158,6 +159,11 @@ const TournamentList = lazy(() =>
 const AddTournament = lazy(() =>
   import("@src/screens/Tournament/Add").then((o) => ({
     default: o.Add,
+  }))
+);
+const TournamentAvg = lazy(() =>
+  import("@src/screens/Tournament/Detail/AddAvg").then((o) => ({
+    default: o.AddAvgPage,
   }))
 );
 
@@ -1040,6 +1046,35 @@ const Routes: TRoute[] = [
         { title: "Home", link: "/dashboard" },
         { title: "MLS", link: "/mls-list" },
         { title: "Detail" },
+      ],
+    },
+    auth: true,
+    hasBack: true,
+  },
+  {
+    path: "/tournament-detail/:id",
+    element: <TournamentDetail />,
+    breadCrumb: {
+      main: { title: "Tournament" },
+      secondary: [
+        { title: "Home", link: "/dashboard" },
+        { title: "TOURNAMENT", link: "/tournament-list" },
+        { title: "Detail" },
+      ],
+    },
+    auth: true,
+    hasBack: true,
+  },
+  {
+    path: "/tournament-detail/add-avg/:id",
+    element: <TournamentAvg />,
+    breadCrumb: {
+      main: { title: "Tournament add avrage" },
+      secondary: [
+        { title: "Home", link: "/dashboard" },
+        { title: "Tournament", link: "/tournament-list" },
+        { title: "Detail" },
+        { title: "Add avrage" },
       ],
     },
     auth: true,

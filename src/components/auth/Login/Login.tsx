@@ -102,7 +102,7 @@ const Login: FC = (): JSX.Element => {
     // } else
     login.mutate(obj, {
       onSuccess: (val) => {
-        dispatch(handleLogin({ email: value.email, token: val?.data?.token }));
+        dispatch(handleLogin({ ...val?.data, email: value.email }));
         dispatch(handleAuthEmail(value.email));
         console.log(val.data);
         navigate("/");
@@ -149,7 +149,7 @@ const Login: FC = (): JSX.Element => {
           >
             <FormWrapper
               initialValues={initialValue}
-              validationSchema={loginValidation}
+              // validationSchema={loginValidation}
               onSubmit={onSubmit}
               enableReinitialize
               className="h-100 w-100 d-inline-block"
